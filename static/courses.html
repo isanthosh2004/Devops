@@ -1,92 +1,221 @@
-<DocType html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santhosh Kumar S P - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f1117;
+      color: #e0e0e0;
+    }
+    header {
+      background: #1a1d29;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #333;
+    }
+    header h1 {
+      margin: 0;
+      color: #00bcd4;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+    main {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #00bcd4;
+    }
+    .card {
+      background: #1c1f2b;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+      object-fit: contain;
+      border-radius: 5px;
+      background: #fff;
+      padding: 5px;
+    }
+    .skills-list, .project-list, .course-list, .cert-list {
+      list-style: none;
+      padding: 0;
+    }
+    .skills-list li, .project-list li, .course-list li, .cert-list li {
+      background: #2a2e3d;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .skills-list li:hover, .project-list li:hover, .course-list li:hover, .cert-list li:hover {
+      background: #3a3f54;
+    }
+    a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+    footer {
+      background: #1a1d29;
+      color: #999;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+      border-top: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Santhosh Kumar S P</h1>
+    <p>B.Tech CSE | Machine Learning • DevOps • SDE • Full-Stack</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<html>
-    <head>
-        <title>Learn DevOps from Basics</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>Hi, I’m <strong>Santhosh Kumar S P</strong>, a final-year B.Tech Computer Science student at VIT Vellore (CGPA 8.66). Passionate about <b>Machine Learning, LLMs, DevOps, and Full-Stack Development</b>. I love building scalable systems and solving complex problems.</p>
+      </div>
+    </section>
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <img src="https://1000logos.net/wp-content/uploads/2021/05/DBS-Bank-logo.png" class="logo" alt="DBS Logo">
+        <p><b>DBS Bank</b> — DevOps Intern (Jun 2025 – Present)</p>
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTezmWC96MgZ-vf_mbU3xyQDQhEsl_O2G9qUA&s" class="logo" alt="EY Logo">
+        <p><b>EY India</b> — Summer Intern (May 2025 – Jun 2025)</p>
+      </div>
+      <div class="card">
+        <img src="https://media.licdn.com/dms/image/v2/C560BAQH3lurqecHRug/company-logo_200_200/company-logo_200_200/0/1630647495008/samsungresearch_logo?e=2147483647&v=beta&t=YTDIICZuDhhvmox13h-24XG-cs9iQD8GnjvV7jqqptU" class="logo" alt="Samsung Logo">
+        <p><b>Samsung R&D</b> — Project Intern (Sep 2024 – May 2025)</p>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/National_Institute_of_Technology%2C_Tiruchirappalli.svg/1200px-National_Institute_of_Technology%2C_Tiruchirappalli.svg.png" class="logo" alt="NIT Trichy Logo">
+        <p><b>NIT Trichy</b> — Summer Intern (May 2024 – Jul 2024)</p>
+      </div>
+    </section>
 
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Machine Learning, NLP, LLMs, Computer Vision</li>
+        <li>DevOps: Docker, Kubernetes, Jenkins, Terraform</li>
+        <li>Cloud: AWS (SAA-C03 Certified), Azure</li>
+        <li>Full-stack: Spring Boot, Flask, React, Next.js</li>
+        <li>Programming: Java, Python, C++, Go</li>
+      </ul>
+    </section>
 
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li><a href="https://github.com/isanthosh2004/dashboard_caterpillar">Failure Prediction Dashboard (Caterpillar)</a></li>
+        <li><a href="https://github.com/isanthosh2004/Gesturure-controlled-OS">Gesture Controlled OS</a></li>
+        <li><a href="https://github.com/isanthosh2004/AI-Powered-Shopping-Assistant">AI Shopping Assistant</a></li>
+        <li><a href="https://github.com/Shivani19924/Healthcare_appoinment_booking">Healthcare Appointment Booking System</a></li>
+      </ul>
+    </section>
 
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
+    <section id="courses">
+      <h2>CSE Courses Completed</h2>
+      <ul class="course-list">
+        <li>Data Structures and Algorithms</li>
+        <li>Design and Analysis of Algorithms</li>
+        <li>Computer Architecture and Organization</li>
+        <li>Theory of Computation</li>
+        <li>Microprocessors and Microcontrollers</li>
+        <li>Machine Learning</li>
+        <li>Database Systems</li>
+        <li>Compiler Design</li>
+        <li>Computer Networks</li>
+        <li>Foundations of Data Science</li>
+        <li>Software Engineering</li>
+        <li>Embedded Systems</li>
+        <li>Cryptography and Network Security</li>
+        <li>Information Security</li>
+      </ul>
+    </section>
 
-            main {
-                padding: 20px;
-            }
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" class="logo" alt="AWS Logo">
+          <a href="https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/certification/approved/images/certification-badges/saa-badge-resized.c6a0dd1191bf67ccfdd8b4873faffead406ccec7.png">AWS Solutions Architect Associate</a>
+        </li>
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Microsoft_Azure_Logo.svg" class="logo" alt="Azure Logo">
+          <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1024px-Microsoft_Azure.svg.png">Azure DP-900 Data Fundamentals</a>
+        </li>
+        <li>
+          <img src="https://pathrise-website-guide-wp.s3.us-west-1.amazonaws.com/guides/wp-content/uploads/2019/05/10175228/images-11.png" class="logo" alt="LeetCode Logo">
+          <a href="https://leetcode.com/u/isanthosh2004/">LeetCode Contest Rank 34 / 30,000</a>
+        </li>
+        <li>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Codeforces_logo.svg" class="logo" alt="Codeforces Logo">
+          <a href="https://codeforces.com/profile/santhoshkumarsp222004">Codeforces Max Pupil (1232)</a>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-            section {
-                margin-bottom: 20px;
-            }
-
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h1>Learn DevOps from Basics</h1>
-                <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)</p>
-                <p>It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. DevOps is complementary with Agile software development; several DevOps aspects came from Agile methodology</p>    
-
-                <h2>Main Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">DevOps Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze">AWS Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR">Azure Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf">Terraform Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv">Python Zero to Hero</a></p>
-
-                <h2>Additional Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-">Networking Fundamentals</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE">Ansible Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f">GitOps Zero to Hero</a></p>
-
-                <h2>Troubleshooting Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX">Troubleshooting Kubernetes</a></p>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
-        </footer>
-    </body>
+  <footer>
+    <p>&copy; 2025 Santhosh Kumar S P | 
+      <a href="https://github.com/isanthosh2004">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/santhoshkumar-frontend-ml-sde/">LinkedIn</a>
+    </p>
+  </footer>
+</body>
 </html>
