@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: go-web-app
+  labels:
+    app: go-web-app
+spec:
+  type: ClusterIP   # 👈 must be ClusterIP for ingress
+  selector:
+    app: go-web-app
+  ports:
+    - protocol: TCP
+      port: 80         # Service Port
+      targetPort: 8080 # Container Port
