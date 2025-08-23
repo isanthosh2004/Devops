@@ -1,3 +1,5 @@
+# CICD using GitHub actions
+
 name: CI/CD
 
 on:
@@ -8,6 +10,10 @@ on:
       - 'helm/**'
       - 'k8s/**'
       - 'README.md'
+
+# 👇 Needed so that github-actions[bot] can push updates back to your repo
+permissions:
+  contents: write
 
 jobs:
 
@@ -35,6 +41,11 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+
+    - name: Set up Go 1.22   # 👈 Added so golangci-lint uses the right Go version
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.22
 
     - name: Run golangci-lint
       uses: golangci/golangci-lint-action@v6
