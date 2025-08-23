@@ -1,5 +1,4 @@
 # CICD using GitHub actions
-
 name: CI/CD
 
 on:
@@ -11,7 +10,7 @@ on:
       - 'k8s/**'
       - 'README.md'
 
-# 👇 Needed so that github-actions[bot] can push updates back to your repo
+# Needed so that github-actions[bot] can push updates back to your repo
 permissions:
   contents: write
 
@@ -42,7 +41,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up Go 1.22   # 👈 Added so golangci-lint uses the right Go version
+    - name: Set up Go 1.22
       uses: actions/setup-go@v2
       with:
         go-version: 1.22
@@ -100,7 +99,8 @@ jobs:
         git add helm/go-web-app-chart/values.yaml
         git commit -m "Update tag in Helm chart"
         git push
- deploy:
+
+  deploy:   # 👈 moved here properly aligned
     runs-on: ubuntu-latest
     needs: update-newtag-in-helm-chart
 
